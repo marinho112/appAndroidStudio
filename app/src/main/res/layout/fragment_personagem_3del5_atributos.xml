@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_personagem_3del5_atributos">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constaintLayout_personagem_3del5_atributos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".personagem_3del5_atributos">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_personagem_3del5_atributos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:src="@android:drawable/checkbox_off_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+
+
+                <TableLayout
+                    android:id="@+id/tableLayout_tabela_atributos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_cabecario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_cabecalho_atributos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/tableLayout_cabecalho_atributos"
+                            android:textSize="@dimen/tableLayout_atributos_tamanho_fonte_nome_atributos" />
+
+                        <TextView
+                            android:id="@+id/textView_atributos_cabecalho_base"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin_grande"
+                            android:text="@string/tableLayout_cabecalho_base" />
+
+                        <TextView
+                            android:id="@+id/textView_atributos_cabecalho_bonus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin_grande"
+                            android:text="@string/tableLayout_cabecalho_bonus" />
+
+                        <TextView
+                            android:id="@+id/textView_atributos_cabecalho_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin_grande"
+                            android:text="@string/tableLayout_cabecalho_total" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_forca"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_forca_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_forca"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_forca_base"
+                            android:layout_width="25dp"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_forca_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_forca_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_vitalidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_vitalidade_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_vitalidade"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_vitalidade_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_vitalidade_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_vitalidade_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_destreza"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_destreza_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_destreza"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_destreza_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_destreza_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_destreza_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_agilidade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_agilidade_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_agilidade"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_agilidade_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_agilidade_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_agilidade_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_sentidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_sentidos_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_sentidos"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_sentidos_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_sentidos_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_sentidos_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_inteligencia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <TextView
+                            android:id="@+id/textView_atributos_inteligencia_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:text="@string/atributos_resumido_inteligencia"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_inteligencia_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_inteligencia_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_inteligencia_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_AdicionalUm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalUm_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:hint="-----"
+                            android:maxLength="3"
+                            android:textAlignment="center"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalUm_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalUm_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalUm_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tabela_atributo_AdicionalDois"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/design_default_color_primary_dark">
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalDois_nome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/tableLayout_atributos_margin"
+                            android:hint="-----"
+                            android:maxLength="3"
+                            android:textAlignment="center"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalDois_base"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalDois_bonus"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:inputType="numberSigned|number"
+                            android:maxLength="5"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+
+                        <EditText
+                            android:id="@+id/editText_atributos_AdicionalDois_total"
+                            android:layout_width="@dimen/tableLayout_atributos_width"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:inputType="numberSigned|number"
+                            android:textSize="@dimen/editText_personagem_atributo" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/textView_valores_deslocamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="desloc:"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_peso_levantar"
+                    app:layout_constraintStart_toStartOf="@+id/textView_valores_pv"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valores_pv_perdido" />
+
+                <TextView
+                    android:id="@+id/textView_valores_pv_perdido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Pv Perdido:"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_valores_deslocamento"
+                    app:layout_constraintStart_toStartOf="@+id/textView_valores_pv"
+                    app:layout_constraintTop_toBottomOf="@id/textView_valores_pv" />
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador_tres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valor_multiplicador_tres"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/editText_valor_multiplicador_tres"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_valor_multiplicador_tres" />
+
+                <TextView
+                    android:id="@+id/textView_valor_reflexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Ref.:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_acerto" />
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador_um"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valor_multiplicador_um"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/editText_valor_multiplicador_um"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_valor_multiplicador_um" />
+
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador_quatro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valor_multiplicador_quatro"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/editText_valor_multiplicador_quatro"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_valor_multiplicador_quatro" />
+
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador_cinco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valor_multiplicador_cinco"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/editText_valor_multiplicador_cinco"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_valor_multiplicador_cinco" />
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:text="Multiplicador"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_percepcao" />
+
+                <TextView
+                    android:id="@+id/textView_valor_vontade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Von.:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_resistencia" />
+
+                <TextView
+                    android:id="@+id/textView_valor_multiplicador_dois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valor_multiplicador_dois"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="@id/editText_valor_multiplicador_dois"
+                    app:layout_constraintTop_toBottomOf="@+id/editText_valor_multiplicador_dois" />
+
+                <TextView
+                    android:id="@+id/textView_valor_reducao_dano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="R.D:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_dano" />
+
+                <TextView
+                    android:id="@+id/textView_valor_acerto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Ac.:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_reducao_dano" />
+
+                <TextView
+                    android:id="@+id/textView_altura_saltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Alt.Salto:"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_velocidade_correr"
+                    app:layout_constraintEnd_toStartOf="@id/editText_altura_saltar"
+                    app:layout_constraintStart_toStartOf="@id/textView_peso_levantar"
+                    app:layout_constraintTop_toBottomOf="@id/textView_peso_levantar" />
+
+                <TextView
+                    android:id="@+id/textView_valor_percepcao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Per.:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_vontade" />
+
+                <TextView
+                    android:id="@+id/textView_velocidade_correr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Vel.Corr.:"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@id/editText_velocidade_correr"
+                    app:layout_constraintStart_toStartOf="@id/textView_altura_saltar"
+                    app:layout_constraintTop_toBottomOf="@id/textView_altura_saltar" />
+
+                <TextView
+                    android:id="@+id/textView_valores_acoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Ações:"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toStartOf="@id/editText_acoes"
+                    app:layout_constraintStart_toStartOf="@id/textView_altura_saltar"
+                    app:layout_constraintTop_toBottomOf="@id/textView_velocidade_correr" />
+
+                <EditText
+                    android:id="@+id/editText_acoes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_valores_acoes"
+                    app:layout_constraintEnd_toEndOf="@+id/editText_velocidade_correr"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valores_acoes"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valores_acoes" />
+
+                <TextView
+                    android:id="@+id/textView_peso_levantar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Lev.Peso:"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_altura_saltar"
+                    app:layout_constraintEnd_toStartOf="@id/editText_peso_levantar"
+                    app:layout_constraintStart_toStartOf="@id/textView_valores_deslocamento"
+                    app:layout_constraintTop_toBottomOf="@id/textView_valores_deslocamento" />
+
+                <TextView
+                    android:id="@+id/textView_valor_resistencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Res.:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView_valor_reflexo" />
+
+                <TextView
+                    android:id="@+id/textView_valor_dano"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/personagen_atributos_margin"
+                    android:clickable="true"
+                    android:text="Dano:"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_valor_reducao_dano"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valor_dano"
+                    app:layout_constraintStart_toStartOf="@+id/tableLayout_tabela_atributos"
+                    app:layout_constraintTop_toBottomOf="@+id/tableLayout_tabela_atributos" />
+
+                <TextView
+                    android:id="@+id/textView_valores_pontosGastos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:clickable="false"
+                    android:text="Ficha: 0 Pts"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_valores_pv"
+                    app:layout_constraintStart_toEndOf="@+id/tableLayout_tabela_atributos"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView_valores_pv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:clickable="true"
+                    android:text="PV:"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toTopOf="@id/textView_valores_pv_perdido"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valores_pv_atual"
+                    app:layout_constraintStart_toEndOf="@+id/tableLayout_tabela_atributos"
+                    app:layout_constraintTop_toBottomOf="@id/textView_valores_pontosGastos" />
+
+                <EditText
+                    android:id="@+id/editText_valor_multiplicador_um"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginLeft="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginEnd="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginRight="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginBottom="85dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valor_multiplicador_dois"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/textView_valor_multiplicador" />
+
+                <EditText
+                    android:id="@+id/editText_valor_multiplicador_tres"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginRight="@dimen/atributos_multiplicador_margem"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_valor_multiplicador_dois"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valor_multiplicador_quatro"
+                    app:layout_constraintStart_toEndOf="@+id/editText_valor_multiplicador_dois"
+                    app:layout_constraintTop_toTopOf="@+id/editText_valor_multiplicador_dois" />
+
+                <EditText
+                    android:id="@+id/editText_valor_multiplicador_quatro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginRight="@dimen/atributos_multiplicador_margem"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_valor_multiplicador_tres"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valor_multiplicador_cinco"
+                    app:layout_constraintStart_toEndOf="@+id/editText_valor_multiplicador_tres"
+                    app:layout_constraintTop_toTopOf="@+id/editText_valor_multiplicador_tres" />
+
+                <EditText
+                    android:id="@+id/editText_valor_percepcao"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_percepcao"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_percepcao"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_percepcao" />
+
+                <EditText
+                    android:id="@+id/editText_valor_vontade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_vontade"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_vontade"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_vontade" />
+
+                <EditText
+                    android:id="@+id/editText_valor_dano"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_dano"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_dano"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_dano" />
+
+                <EditText
+                    android:id="@+id/editText_valores_deslocamento"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="@dimen/view_atributos_margin_end"
+                    android:layout_marginRight="@dimen/view_atributos_margin_end"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_valores_deslocamento"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/textView_valores_deslocamento"
+                    app:layout_constraintTop_toTopOf="@id/textView_valores_deslocamento" />
+
+                <EditText
+                    android:id="@+id/editText_valor_multiplicador_cinco"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginRight="@dimen/atributos_multiplicador_margem"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_valor_multiplicador_quatro"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/editText_valor_multiplicador_quatro"
+                    app:layout_constraintTop_toTopOf="@+id/editText_valor_multiplicador_quatro" />
+
+                <EditText
+                    android:id="@+id/editText_valores_pv_perdido"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="@dimen/view_atributos_margin_end"
+                    android:layout_marginRight="@dimen/view_atributos_margin_end"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valores_pv_perdido"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valores_pv_perdido"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valores_pv_perdido" />
+
+                <EditText
+                    android:id="@+id/editText_valor_multiplicador_dois"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/atributos_multiplicador_margem"
+                    android:layout_marginRight="@dimen/atributos_multiplicador_margem"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText_valor_multiplicador_um"
+                    app:layout_constraintEnd_toStartOf="@id/editText_valor_multiplicador_tres"
+                    app:layout_constraintStart_toEndOf="@+id/editText_valor_multiplicador_um"
+                    app:layout_constraintTop_toTopOf="@+id/editText_valor_multiplicador_um" />
+
+                <EditText
+                    android:id="@+id/editText_velocidade_correr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_velocidade_correr"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valores_deslocamento"
+                    app:layout_constraintStart_toEndOf="@+id/textView_velocidade_correr"
+                    app:layout_constraintTop_toTopOf="@+id/textView_velocidade_correr" />
+
+                <EditText
+                    android:id="@+id/editText_valor_acerto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_valor_acerto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_acerto"
+                    app:layout_constraintTop_toTopOf="@id/textView_valor_acerto" />
+
+                <EditText
+                    android:id="@+id/editText_valor_reflexo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_reflexo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_reflexo"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_reflexo" />
+
+                <EditText
+                    android:id="@+id/editText_valores_pv_atual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginEnd="@dimen/view_atributos_margin_end"
+                    android:layout_marginRight="@dimen/view_atributos_margin_end"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valores_pv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valores_pv"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valores_pv" />
+
+                <EditText
+                    android:id="@+id/editText_altura_saltar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_altura_saltar"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valores_deslocamento"
+                    app:layout_constraintStart_toEndOf="@+id/textView_altura_saltar"
+                    app:layout_constraintTop_toTopOf="@+id/textView_altura_saltar" />
+
+                <EditText
+                    android:id="@+id/editText_valor_reducao_dano"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_reducao_dano"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_reducao_dano"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_reducao_dano" />
+
+                <EditText
+                    android:id="@+id/editText_valor_resistencia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="true"
+                    android:focusable="false"
+                    android:inputType="numberSigned|number"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView_valor_resistencia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView_valor_resistencia"
+                    app:layout_constraintTop_toTopOf="@+id/textView_valor_resistencia" />
+
+                <EditText
+                    android:id="@+id/editText_peso_levantar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:textSize="@dimen/editText_personagem_atributo"
+                    app:layout_constraintBottom_toBottomOf="@id/textView_peso_levantar"
+                    app:layout_constraintEnd_toEndOf="@id/editText_valores_deslocamento"
+                    app:layout_constraintStart_toEndOf="@+id/textView_peso_levantar"
+                    app:layout_constraintTop_toTopOf="@+id/textView_peso_levantar" />
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

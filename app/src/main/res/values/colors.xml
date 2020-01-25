@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="fundoTextFildDescriçãoPopUp">#DDDDDD</color>
+    <color name="bonusUmPersonagem3del5">#084A86</color>
+    <color name="bonusDoisPersonagem3del5">#227603</color>
+    <color name="bonusTresPersonagem3del5">#FFC421</color>
+    <color name="bonusQuatroPersonagem3del5">#C30E15</color>
+</resources>

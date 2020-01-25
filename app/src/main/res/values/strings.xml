@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">3D&amp;L Unificados</string>
+    <string name="menu_opcao_personagem">Personagens</string>
+    <string name="menu_opcao_salas">Salas</string>
+    <string name="menu_opcao_conecxao">Conectar a dispositivos</string>
+    <string name="menu_opcao_backup">Sincronizar nuvem</string>
+    <string name="textView_nome_personagem">Nome</string>
+    <string name="textView_raca_personagem">Raça</string>
+    <string name="textView_funcao_personagem">Função</string>
+    <string name="textView_idade_personagem">Idade</string>
+    <string name="textView_imagem_personagem">Foto</string>
+    <string name="tableLayout_cabecalho_atributos">Atrib.</string>
+    <string name="tableLayout_cabecalho_base">Base</string>
+    <string name="tableLayout_cabecalho_bonus">Bônus</string>
+    <string name="tableLayout_cabecalho_total">Total</string>
+    <string name="atributos_resumido_forca">FOR</string>
+    <string name="atributos_resumido_vitalidade">CON</string>
+    <string name="atributos_resumido_destreza">DES</string>
+    <string name="atributos_resumido_agilidade">AGI</string>
+    <string name="atributos_resumido_sentidos">SEN</string>
+    <string name="atributos_resumido_inteligencia">INT</string>
+    <string name="textView_classe_tamanho_personagem">Classe de Tamanho</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_opcao_regras">Regras</string>
+    <string name="menu_opcao_exportar">Exportar Personagem</string>
+    <string name="menu_opcao_importar">Importar Personagem</string>
+    <string name="menu_opcao_saladomestre">Sala do Mestre</string>
+
+</resources>

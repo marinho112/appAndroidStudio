@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a3dl_unificados">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".tela_de_regras"></activity>
+        <activity android:name=".componentes.objeto_3del5_item_lista_caracteristicas" />
+        <activity android:name=".activity_lista_cadastro_pericias_3del5" />
+        <activity android:name=".activity_objeto_3del5_item_lista_pericias2" />
+        <activity android:name=".componentes.objeto_3del5_separador_lista_Pericias" />
+        <activity android:name=".componentes.objeto_3del5_item_lista_pericias" />
+        <activity android:name=".componentes.objeto_personagens_item" />
+        <activity android:name=".componentes.objeto_3del5_item_lista_item" />
+        <activity
+            android:name=".personagem_3del5"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

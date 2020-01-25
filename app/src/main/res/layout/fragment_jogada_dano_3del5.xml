@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    tools:context=".fragment.fragment_jogada_dano_3del5" >
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtDano"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:text="9999"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toTopOf="@+id/jogada_dano_3del5_txtEscritoMultiplicador"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_txtSomaDano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogada_dano_3del5_txtEscritoDano" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtMultiplicador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:text="99999"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_txtSomaMultiplicador"
+        app:layout_constraintStart_toStartOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintTop_toBottomOf="@id/jogada_dano_3del5_txtEscritoMultiplicador" />
+
+    <EditText
+        android:id="@+id/jogada_dano_3del5_editDano"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_txtIgualDano"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_txtSomaDano"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtDano" />
+
+    <EditText
+        android:id="@+id/jogada_dano_3del5_editMultiplicador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtMultiplicador"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_txtIgualMultiplicador"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_txtSomaMultiplicador"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtMultiplicador" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtSomaDano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="@dimen/jogadaDano3del5FonteSizeGrande"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_editDano"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtDano" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtIgualDano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="@dimen/jogadaDano3del5FonteSizeGrande"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_editResultadoDano"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_editDano"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtDano" />
+
+    <EditText
+        android:id="@+id/jogada_dano_3del5_editResultadoDano"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="false"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtDano"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_btnRolar"
+        app:layout_constraintStart_toEndOf="@id/jogada_dano_3del5_txtIgualDano"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtDano" />
+
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtSomaMultiplicador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="@dimen/jogadaDano3del5FonteSizeGrande"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtMultiplicador"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_editMultiplicador"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_txtMultiplicador"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtMultiplicador" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtIgualMultiplicador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="@dimen/jogadaDano3del5FonteSizeGrande"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtMultiplicador"
+        app:layout_constraintEnd_toStartOf="@id/jogada_dano_3del5_editResultadoMultiplicador"
+        app:layout_constraintStart_toEndOf="@+id/jogada_dano_3del5_editMultiplicador"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtMultiplicador" />
+
+    <EditText
+        android:id="@+id/jogada_dano_3del5_editResultadoMultiplicador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:enabled="true"
+        android:focusable="false"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="@+id/jogada_dano_3del5_txtMultiplicador"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_btnRolar"
+        app:layout_constraintStart_toEndOf="@id/jogada_dano_3del5_txtIgualMultiplicador"
+        app:layout_constraintTop_toTopOf="@+id/jogada_dano_3del5_txtMultiplicador" />
+
+    <Button
+        android:id="@+id/jogada_dano_3del5_btnRolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Rolar"
+        android:textSize="@dimen/jogadaDano3del5FonteSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtEscritoDano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Dano"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/jogada_dano_3del5_editDano"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_btnRolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/jogada_dano_3del5_txtEscritoMultiplicador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Multiplicador"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/jogada_dano_3del5_editMultiplicador"
+        app:layout_constraintEnd_toStartOf="@+id/jogada_dano_3del5_btnRolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jogada_dano_3del5_editDano" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

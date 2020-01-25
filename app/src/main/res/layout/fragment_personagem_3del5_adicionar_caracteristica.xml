@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.fragment_personagem_3del5_adicionar_caracteristica">
+
+
+    <EditText
+        android:id="@+id/personagem_3del5_adiionar_caracteristica_editNome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="Nome da Característica"
+        android:inputType="textPersonName"
+        android:maxLength="39" />
+
+    <EditText
+        android:id="@+id/personagem_3del5_adiionar_caracteristica_editCusto"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="Custo"
+        android:inputType="numberSigned"
+        android:maxLength="3" />
+
+    <EditText
+        android:id="@+id/personagem_3del5_adiionar_caracteristica_editDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="8dp"
+        android:background="@color/fundoTextFildDescriçãoPopUp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Descrição da Característica"
+        android:inputType="textMultiLine"
+        android:maxLength="999" />
+
+    <Button
+        android:id="@+id/personagem_3del5_adiionar_caracteristica_btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Salvar" />
+</LinearLayout>

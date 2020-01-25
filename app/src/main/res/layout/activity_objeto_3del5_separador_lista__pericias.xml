@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    tools:context=".componentes.objeto_3del5_separador_lista_Pericias"
+    android:background="@drawable/drawable_fundo_divisor_lista_pericias_3del5">
+
+    <TextView
+        android:id="@+id/objeto_3del5_separador_lista_pericias_txtPericia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="22sp"
+        android:text="Perícia Física"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/objeto_3del5_separador_lista_pericias_txtPontos"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/objeto_3del5_separador_lista_pericias_txtPontos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
+        android:textSize="20sp"
+        android:text="0pts"
+        app:layout_constraintStart_toEndOf="@id/objeto_3del5_separador_lista_pericias_txtPericia"
+        app:layout_constraintEnd_toStartOf="@id/objeto_3del5_separador_lista_pericias_btnAdicao"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/objeto_3del5_separador_lista_pericias_btnAdicao"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/drawable_bordas_redondas"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/objeto_3del5_separador_lista_pericias_txtPontos"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

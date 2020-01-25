@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    tools:context=".fragment.fragment_editor_valores_personagem_3del5">
+
+    <Button
+        android:id="@+id/btn_salvar_editor_valores_3del5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/editText_valor_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:inputType="numberSigned"
+        android:textSize="@dimen/textSize_editor_personagem_3del5"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus1_editor_valores_3del5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <EditText
+        android:id="@+id/editText_bonus1_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bonusUmPersonagem3del5"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textColor="@color/bonusUmPersonagem3del5"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus2_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_valor_editor_valores_3del5"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <EditText
+        android:id="@+id/editText_bonus2_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bonusDoisPersonagem3del5"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textColor="@color/bonusDoisPersonagem3del5"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus3_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus1_editor_valores_3del5"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <EditText
+        android:id="@+id/editText_bonus3_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bonusTresPersonagem3del5"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textColor="@color/bonusTresPersonagem3del5"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus4_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus2_editor_valores_3del5"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <EditText
+        android:id="@+id/editText_bonus4_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/bonusQuatroPersonagem3del5"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:maxLength="5"
+        android:textColor="@color/bonusQuatroPersonagem3del5"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus3_editor_valores_3del5"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <EditText
+        android:id="@+id/editText_soma_editor_valores_3del5"
+        android:layout_width="@dimen/editText_editor_valores_tamanho"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:enabled="true"
+        android:focusable="false"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@id/btn_salvar_editor_valores_3del5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus4_editor_valores_3del5"
+        app:layout_constraintTop_toBottomOf="@id/textFild_total_editor_valores_3del5" />
+
+    <TextView
+        android:id="@+id/textFild_total_editor_valores_3del5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="Total"
+        app:layout_constraintEnd_toEndOf="@+id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toStartOf="@+id/editText_soma_editor_valores_3del5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_texto_editor_valores_3del5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="Determine o seu Bônus Total"
+        app:layout_constraintEnd_toStartOf="@+id/textFild_total_editor_valores_3del5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toTopOf="@+id/textFild_total_editor_valores_3del5" />
+
+    <TextView
+        android:id="@+id/textView_sinal_soma_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintBottom_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_valor_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus1_editor_valores_3del5"
+        />
+    <TextView
+        android:id="@+id/textView_sinal_soma_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintBottom_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus1_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus2_editor_valores_3del5"
+        />
+    <TextView
+        android:id="@+id/textView_sinal_soma_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintBottom_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus2_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus3_editor_valores_3del5"
+        />
+    <TextView
+        android:id="@+id/textView_sinal_soma_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="+"
+        app:layout_constraintTop_toTopOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintBottom_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus3_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_bonus4_editor_valores_3del5"
+        />
+    <TextView
+        android:id="@+id/textView_sinal_igual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/fonte_tableLayout_atributos_nome_atributos"
+        android:text="="
+        app:layout_constraintTop_toTopOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintBottom_toBottomOf="@id/editText_soma_editor_valores_3del5"
+        app:layout_constraintStart_toEndOf="@id/editText_bonus4_editor_valores_3del5"
+        app:layout_constraintEnd_toStartOf="@id/editText_soma_editor_valores_3del5"
+        />
+</android.support.constraint.ConstraintLayout>

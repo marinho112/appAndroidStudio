@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/objeto_3del5_item_lista_item_Constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    tools:context=".componentes.objeto_3del5_item_lista_item">
+
+    <TextView
+        android:id="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="item"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_sistema_personagem_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/textView_sistema_personagem_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="item"
+        android:gravity="end"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/checkBox_item_3del5"
+        app:layout_constraintStart_toEndOf="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/objeto_3del5_item_lista_pericias_txtAtributoPrincipal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Utilizavel"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/checkBox_item_3del5"
+        app:layout_constraintStart_toStartOf="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        app:layout_constraintTop_toBottomOf="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox_item_3del5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_margin="8dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/objeto_3del5_item_lista_pericias_txtAtributoPrincipal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        app:layout_constraintTop_toTopOf="@+id/objeto_3del5_item_lista_pericias_txtNome"
+        app:layout_constraintVertical_bias="0.5" />
+</android.support.constraint.ConstraintLayout>

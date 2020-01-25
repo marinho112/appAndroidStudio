@@ -1,0 +1,19 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tableLayout_atributos_margin">2dp</dimen>
+    <dimen name="tableLayout_atributos_width">25dp</dimen>
+    <dimen name="tableLayout_atributos_tamanho_fonte">20sp</dimen>
+    <dimen name="tableLayout_atributos_margin_grande">4dp</dimen>
+    <dimen name="tableLayout_atributos_tamanho_fonte_nome_atributos">14sp</dimen>
+    <dimen name="view_atributos_margin_end">20dp</dimen>
+    <dimen name="atributos_multiplicador_margem">20dp</dimen>
+    <dimen name="editText_personagem_atributo">14sp</dimen>
+    <dimen name="personagen_atributos_margin">18dp</dimen>
+    <dimen name="fonte_tableLayout_atributos_nome_atributos">18sp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="editText_editor_valores_tamanho">50dp</dimen>
+    <dimen name="textSize_editor_personagem_3del5">12sp</dimen>
+    <dimen name="tamanho_editText_jogada_pericia_3del5">60dp</dimen>
+    <dimen name="jogadaDano3del5FonteSize">17sp</dimen>
+    <dimen name="jogadaDano3del5FonteSizeGrande">22sp</dimen>
+</resources>

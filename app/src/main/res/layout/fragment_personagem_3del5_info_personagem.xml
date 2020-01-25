@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.fragment_personagem_3del5_info_personagem">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_personagem_3del5_informacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:orientation="vertical"
+            tools:context=".personagem_3del5_info_personagem">
+
+            <TextView
+                android:id="@+id/objeto_3del5_item_lista_pericias_txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_nome_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_nome_personagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="49"
+                android:text=""
+                tools:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_raca_personagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_raca_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_raca_personagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="19"
+                android:text=""
+                tools:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/objeto_3del5_item_lista_pericias_txtAtributoPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_funcao_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_funcao_personagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="29"
+                android:text=""
+                tools:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_idade_personagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_idade_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_idade_personagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="6"
+                android:text=""
+                tools:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_classe_tamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_classe_tamanho_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_classe_tamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:maxLength="9"
+                android:text=""
+                tools:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView_imagem_personagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+                android:text="@string/textView_imagem_personagem"
+                tools:textSize="24sp"
+                tools:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/personagem_3del5_info_imageView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/ic_menu_manage"
+                android:layout_marginBottom="45dp"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.fragment_item_3del5_editor_informacoes">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewNomeItem_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Nome:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescricaoItem_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="@id/editTextNomeItem_item_3del5_editor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/editTextNomeItem_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:maxLength="39"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="@id/textViewNomeItem_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewNomeItem_item_3del5_editor"
+            app:layout_constraintTop_toTopOf="@id/textViewNomeItem_item_3del5_editor" />
+
+        <TextView
+            android:id="@+id/textViewQuantidadeItem_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Qtd:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/editTextQuantidadeItem_item_3del5_editor"
+            app:layout_constraintEnd_toStartOf="@+id/editTextQuantidadeItem_item_3del5_editor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeItem_item_3del5_editor" />
+
+        <EditText
+            android:id="@+id/editTextQuantidadeItem_item_3del5_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="3"
+            app:layout_constraintBottom_toTopOf="@id/spinnerTipoItem_item_3del5_editor"
+            app:layout_constraintEnd_toStartOf="@+id/textViewPesoItem_item_3del5_editor"
+            app:layout_constraintStart_toEndOf="@+id/textViewQuantidadeItem_item_3del5_editor"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeItem_item_3del5_editor" />
+
+        <TextView
+            android:id="@+id/textViewPesoItem_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Peso:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewQuantidadeItem_item_3del5_editor"
+            app:layout_constraintEnd_toStartOf="@id/editTextPesoItem_item_3del5_editor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/editTextQuantidadeItem_item_3del5_editor"
+            app:layout_constraintTop_toTopOf="@+id/textViewQuantidadeItem_item_3del5_editor" />
+
+        <EditText
+            android:id="@+id/editTextPesoItem_item_3del5_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:maxLength="9"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPesoItem_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewPesoItem_item_3del5_editor"
+            app:layout_constraintTop_toTopOf="@+id/textViewPesoItem_item_3del5_editor" />
+
+        <Spinner
+            android:id="@+id/spinnerTipoItem_item_3del5_editor"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/textViewDescricaoItem_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextQuantidadeItem_item_3del5_editor" />
+
+        <TextView
+            android:id="@+id/textViewDescricaoItem_item_3del5_editor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Descrição"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/ScrollView_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewQuantidadeItem_item_3del5_editor"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ScrollView
+            android:id="@+id/ScrollView_item_3del5_editor"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:background="@color/fundoTextFildDescriçãoPopUp"
+            app:layout_constraintBottom_toTopOf="@id/buttonFechar_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/textViewDescricaoItem_item_3del5_editor"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescricaoItem_item_3del5_editor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextDescricaoItem_item_3del5_editor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/fundoTextFildDescriçãoPopUp"
+                    android:ems="10"
+                    android:inputType="textShortMessage|textMultiLine"
+                    android:maxLength="199"
+                    android:maxLines="6"
+                    android:scrollHorizontally="false"
+                    android:text="" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonFechar_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Fechar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/buttonSalvar_item_3del5_editor"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ScrollView_item_3del5_editor"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+        <Button
+            android:id="@+id/buttonSalvar_item_3del5_editor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Salvar"
+            app:layout_constraintBottom_toBottomOf="@id/buttonFechar_item_3del5_editor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/buttonFechar_item_3del5_editor"
+            app:layout_constraintTop_toTopOf="@id/buttonFechar_item_3del5_editor"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

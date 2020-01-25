@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.fragment_personagem_3del5_lista_caracteristicas">
+
+    <TextView
+        android:id="@+id/fragment_personagem_3del5_lista_caracteristicas_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Lista de Características"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/fragment_personagem_3del5_lista_caracteristicas_listView"
+        app:layout_constraintEnd_toStartOf="@id/fragment_personagem_3del5_lista_caracteristicas_textViewPontos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_personagem_3del5_lista_caracteristicas_textViewPontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0pts"
+        android:layout_marginRight="8dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fragment_personagem_3del5_lista_caracteristicas_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_personagem_3del5_lista_caracteristicas_textView"
+        app:layout_constraintTop_toTopOf="@id/fragment_personagem_3del5_lista_caracteristicas_textView" />
+
+    <ListView
+        android:id="@+id/fragment_personagem_3del5_lista_caracteristicas_listView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fragment_personagem_3del5_lista_caracteristicas_textView">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fragment_personagem_3del5_lista_caracteristicas_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:src="@mipmap/fab_adicao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

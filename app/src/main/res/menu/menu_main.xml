@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a3dl_unificados.MainActivity">
+    <item
+        android:id="@+id/menu_opcao_personagens"
+        android:orderInCategory="100"
+        android:title="@string/menu_opcao_personagem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_opcao_regras"
+        android:orderInCategory="101"
+        android:title="@string/menu_opcao_regras" />
+    <item
+        android:id="@+id/menu_opcao_exportar"
+        android:orderInCategory="102"
+        android:title="@string/menu_opcao_exportar" />
+    <item
+        android:id="@+id/menu_opcao_importar"
+        android:orderInCategory="102"
+        android:title="@string/menu_opcao_importar" />
+    <item
+        android:id="@+id/menu_opcao_sala_mestre"
+        android:orderInCategory="102"
+        android:title="@string/menu_opcao_saladomestre" />
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".fragment.fragment_personagem_3del5_lista_pericias_adicionar_pericia">
+
+    <ListView
+        android:id="@+id/personagem_3del5_lista_pericias_adicionar_pericia_listView"
+        android:layout_width="180dp"
+        android:layout_height="400dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:text="Adicionar Perícia"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnNovaPericia"
+
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_listView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/personagem_3del5_lista_pericias_adicionar_pericia_btnNovaPericia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:text="Criar Perícia"
+        app:layout_constraintBottom_toTopOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnExcluir"
+        app:layout_constraintEnd_toEndOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        app:layout_constraintStart_toStartOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        app:layout_constraintTop_toBottomOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar" />
+
+    <Button
+        android:id="@+id/personagem_3del5_lista_pericias_adicionar_pericia_btnExcluir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        android:text="Excluir Perícia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        app:layout_constraintStart_toStartOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnAdicionar"
+        app:layout_constraintTop_toBottomOf="@id/personagem_3del5_lista_pericias_adicionar_pericia_btnNovaPericia" />
+</android.support.constraint.ConstraintLayout>
